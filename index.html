@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trackerx</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="wrapper">
+        <h4 class="title">Expense Tracker</h4>
+            <div class="balance-div">
+                <h4>YOUR BALANCE</h4>
+                <h1 class="balance">#0.00</h1>
+            </div>
+
+        <div class="inc-exp-con">
+            <div class="income-div">
+                <h4>INCOME</h4>
+                <p class="incomes">#0</p>
+            </div>
+
+            <div class="expense-div">
+                <h4>EXPENSE</h4>
+                <p class="expenses">#0</p>
+            </div>
+
+         </div>
+       
+        <h3>CASH FLOW</h3>
+             <ul id="list" class="list">
+                <!--
+                <li class="minus">
+                  Salary <span class="amount">-#400</span><button  class="delete-btn">x</button>
+                </li> -->
+             </ul>
+      <h3>Add New CashFlow</h3>
+           <form id="form">
+                <div class="form-control">
+                  <label for="text">Transaction</label>
+                  <input type="text" id="text" placeholder="Enter text..." />
+                </div>
+                <div class="form-control">
+                    <label for="amount"
+                      >Cash Value <br />
+                      (negative - expense, positive - income)</label
+                    >
+                    <input type="number" id="amount" placeholder="Enter amount..." />
+                  </div>
+            <button class="btn">Add Transaction</button>
+         </form>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
